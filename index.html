@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SSLG Officers Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
 
@@ -13,47 +14,37 @@
         <div class="toggle-btn">
             <!-- Dark Mode Toggle Switch -->
             <label class="switch">
-                <input type="checkbox" onchange="toggleDarkMode()">
-                <span class="slider"></span>
+                <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()">
+                <span class="slider round"></span>
             </label>
         </div>
+
+        <!-- Sidebar Icons -->
         <div class="sidebar-icons">
-            <a href="#profile" class="icon" title="Profile">
-                <img src="profile-icon.png" alt="Profile Icon">
-            </a>
-            <a href="#contact" class="icon" title="Contact">
-                <img src="contact-icon.png" alt="Contact Icon">
-            </a>
-            <a href="#about" class="icon" title="About">
-                <img src="about-icon.png" alt="About Icon">
-            </a>
+            <a href="https://www.example.com/home" target="_blank"><img src="favicon-home.ico" alt="Home"></a>
+            <a href="https://www.example.com/profile" target="_blank"><img src="favicon-profile.ico" alt="Profile"></a>
+            <a href="https://www.example.com/settings" target="_blank"><img src="favicon-settings.ico" alt="Settings"></a>
+            <!-- Add more icons and links as needed -->
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="content">
-        <section id="profile">
-            <h2>SSLG Officers Profile</h2>
-            <div class="officer-card">
-                <img src="officer-image.jpg" alt="Officer" class="officer-img">
-                <h3>John Doe</h3>
-                <p>President</p>
-                <p>John Doe is the President of the SSLG, dedicated to improving student life and engagement.</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Email: johndoe@sslg.com</p>
-            <p>Phone: 123-456-7890</p>
-        </section>
-
-        <section id="about">
-            <h2>About SSLG</h2>
-            <p>The SSLG is dedicated to promoting student leadership, advocacy, and development.</p>
-        </section>
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <h1>SSLG Officers Gallery</h1>
+        <p>Click on an image to view it on the SSLG page.</p>
+        <div class="gallery-grid">
+            <a href="https://www.facebook.com/sslgpage/photo1" target="_blank">
+                <img src="placeholder1.jpg" alt="Officer 1">
+            </a>
+            <a href="https://www.facebook.com/sslgpage/photo2" target="_blank">
+                <img src="placeholder2.jpg" alt="Officer 2">
+            </a>
+            <a href="https://www.facebook.com/sslgpage/photo3" target="_blank">
+                <img src="placeholder3.jpg" alt="Officer 3">
+            </a>
+            <!-- Additional images can be added here, linking to SSLG or Facebook posts -->
+        </div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
